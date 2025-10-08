@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        while(n!=0){
+            int rem = n%10;
+            n=n/10;
+            sum+=rem;
+        }
+        System.out.println(sum);
+    }
+}
+
+input:
+1234
+output:
+10
