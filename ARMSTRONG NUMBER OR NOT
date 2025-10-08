@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int l=(int)Math.log10(n)+1;
+        int x=0,y=0;
+        int z=n;
+        while(n>0){
+            x=n%10;
+            y=y+(int)Math.pow(x,l);
+            n/=10;
+        }
+        System.out.println((z==y)?"Armstrong":"not Armstrong");
+        
+    }
+}
+
+input:
+153
+output:
+Armstrong
